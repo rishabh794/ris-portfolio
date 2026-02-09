@@ -50,6 +50,7 @@ const experienceData = [
       createLineElement('text', ' = '),
       createLineElement('bracket', '{'),
       createLineElement('newline', ''),
+      createLineElement('newline', ''),
       
       createLineElement('indent', '  '),
       createLineElement('property', 'scalableArchitecture'),
@@ -209,6 +210,7 @@ const experienceData = [
       createLineElement('const', 'project'),
       createLineElement('text', ' = '),
       createLineElement('bracket', '{'),
+      createLineElement('newline', ''),
       createLineElement('newline', ''),
       
       createLineElement('indent', '  '),
@@ -390,11 +392,12 @@ const Experience = () => {
 
   return (
     <section className="w-full min-h-screen bg-black flex items-center justify-center py-12 px-4">
-      <div className="w-full max-w-7xl bg-[#1e1e1e] text-white font-mono rounded-lg overflow-hidden shadow-2xl border border-gray-800">
-        <div className="border-b border-gray-700 px-4 py-3 text-sm">
-          <span className="text-gray-400">Work Experience</span>
-        </div>
-
+      <div className="w-full max-w-7xl">
+        <h2 className="text-3xl font-bold text-white mb-8">
+          <span className="text-blue-500">02.</span> Work Experience
+        </h2>
+        
+        <div className="bg-[#1e1e1e] text-white font-mono rounded-lg overflow-hidden shadow-2xl border border-gray-800">
         <div className="flex h-[calc(80vh-80px)]">
         {/* SIDEBAR */}
         <div className="w-64 bg-[#252526] border-r border-gray-700 flex flex-col">
@@ -484,8 +487,9 @@ const Experience = () => {
           </div>
         </div>
       </div>
-      </div>
-    </section>
+    </div>
+ </div>
+</section>
   );
 };
 
